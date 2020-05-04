@@ -52,8 +52,10 @@ for($i=0; $i -lt $howManyTimes; $i++){
     }
 
     Remove-Item -Path memorykillerbin/*
-    Remove-Item -path memorykillerbin
+    
     $counterCycle=$counterCycle+1
     Write-Host "Cycle $counterCycle completed"
     
 }
+
+Remove-Item -path memorykillerbin
